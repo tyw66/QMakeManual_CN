@@ -3,7 +3,7 @@ description: 基于Qt5.15版本翻译 | By @tyw66
 coverY: -303
 ---
 
-# QMake官方文档【完全汉化】
+# QMake官方文档【中译版】
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
@@ -43,7 +43,7 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 
 
 
-## 第II部分 · 参考手册
+## 第Ⅱ部分 · 参考手册
 
 本部分详细描述了在qmake项目文件中可供使用的变量和函数。
 
