@@ -1,9 +1,9 @@
 ---
-description: 基于Qt5.15版本翻译，翻译：@tyw66
+description: 基于Qt5.15版本翻译 | By @tyw66
 coverY: -303
 ---
 
-# 🇨🇳 QMake官方文档【中译】
+# QMake官方文档【完全汉化】
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
