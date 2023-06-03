@@ -71,9 +71,7 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 
 </div>
 
-:writing\_hand:原创翻译+校对
-
-如您觉得有所收获，随喜赞叹可以请作者吃个一个鸡腿🍗，鼓励创作出更多内容。
+:writing\_hand:如您觉得有所收获，可以请作者吃个鸡腿🍗，鼓励创作出更多内容
 
 <div align="left">
 
