@@ -1,6 +1,6 @@
 # Table of contents
 
-* [QMake官方文档【中译版】](README.md)
+* [QMake官方手册【翻译】](README.md)
 
 ## 🏁 用户手册
 

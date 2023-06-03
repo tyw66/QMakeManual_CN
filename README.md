@@ -3,13 +3,13 @@ description: 基于Qt5.15版本翻译 | By @tyw66
 coverY: -303
 ---
 
-# QMake官方文档【中译版】
+# QMake官方手册【翻译】
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
 ## 第Ⅰ部分 · 用户手册
 
-qmake工具有助于简化跨不同平台的开发项目的构建过程。它可以自动生成Makefile，而创建每个Makefile只需要几行信息。您可以对任何软件项目使用qmake，无论它是否用Qt编写。
+QMake工具有助于简化跨不同平台的开发项目的构建过程。它可以自动生成Makefile，而创建每个Makefile只需要几行信息。您可以对任何软件项目使用qmake，无论它是否用Qt编写。
 
 根据项目文件中的信息生成一个Makefile。项目文件由开发人员创建，通常很简单，但是可以为复杂的项目创建更复杂的项目文件。
 
