@@ -63,7 +63,13 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 
 
 
-————————————————————————————————————————————
+
+
+<div align="center" data-full-width="false">
+
+<figure><img src=".gitbook/assets/分隔素材.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 :writing\_hand:原创翻译+校对
 
