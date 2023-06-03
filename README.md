@@ -59,3 +59,23 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 
 [第13章 测试函数](can-kao-shou-ce/di-13-zhang-ce-shi-han-shu.md)
 
+
+
+
+
+————————————————————————————————————————————
+
+:writing\_hand:原创翻译+校对，欢迎分享\~
+
+:thumbsup:如果觉得有所收获，可以请作者吃个一个鸡腿🍗，鼓励创作出更多内容。
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/WX收款码.jpg" alt="" width="188"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/zfb收款码.jpg" alt="" width="188"><figcaption></figcaption></figure>
+
+</div>
+
