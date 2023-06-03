@@ -36,7 +36,7 @@ CONFIG += console
 
 下表列出了一些常用的变量，并描述了它们的内容。有关变量及其描述的完整列表，请参见[变量](../can-kao-shou-ce/di-11-zhang-bian-liang.md)。
 
-<table><thead><tr><th width="206">变量</th><th>内容</th></tr></thead><tbody><tr><td>CONFIG</td><td>通用项目配置项。</td></tr><tr><td>DESTDIR</td><td>可执行文件或二进制文件所在的目录。</td></tr><tr><td>FORMS</td><td>需要由user interface compiler(uic)处理的UI文件的列表。</td></tr><tr><td>HEADERS</td><td>构建项目时使用的头(.h)文件的文件名列表。</td></tr><tr><td>QT</td><td>在项目中使用的Qt模块的列表。</td></tr><tr><td>RESOURCES</td><td>要包含在最终项目中的资源(.qrc)文件的列表。有关这些文件的更多信息，请参见<a href="https://doc.qt.io/qt-5/resources.html">The Qt Resource System</a>。</td></tr><tr><td>SOURCES</td><td>构建项目时使用的源代码文件列表。</td></tr><tr><td>TEMPLATE</td><td>要用于该项目的模板。这决定了构建过程的输出是应用程序、库还是插件。</td></tr></tbody></table>
+<table><thead><tr><th width="163">变量</th><th>内容</th></tr></thead><tbody><tr><td>CONFIG</td><td>通用项目配置项。</td></tr><tr><td>DESTDIR</td><td>可执行文件或二进制文件所在的目录。</td></tr><tr><td>FORMS</td><td>需要由user interface compiler(uic)处理的UI文件的列表。</td></tr><tr><td>HEADERS</td><td>构建项目时使用的头(.h)文件的文件名列表。</td></tr><tr><td>QT</td><td>在项目中使用的Qt模块的列表。</td></tr><tr><td>RESOURCES</td><td>要包含在最终项目中的资源(.qrc)文件的列表。有关这些文件的更多信息，请参见<a href="https://doc.qt.io/qt-5/resources.html">The Qt Resource System</a>。</td></tr><tr><td>SOURCES</td><td>构建项目时使用的源代码文件列表。</td></tr><tr><td>TEMPLATE</td><td>要用于该项目的模板。这决定了构建过程的输出是应用程序、库还是插件。</td></tr></tbody></table>
 
 一个变量的内容可以通过该变量名前附加`$$`来读取。这可以用来将一个变量的内容分配给另一个变量：
 
