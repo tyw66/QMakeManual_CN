@@ -1,6 +1,7 @@
 ---
 description: 基于Qt5.15版本翻译 | By @tyw66
-coverY: -303
+cover: .gitbook/assets/cover.jpg
+coverY: 0
 ---
 
 # QMake官方文档【翻译】
