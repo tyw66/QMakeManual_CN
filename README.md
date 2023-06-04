@@ -7,7 +7,9 @@ coverY: -303
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
-<mark style="color:blue;">基于Qt5.15版本翻译，原文：</mark>[https://doc.qt.io/qt-5/qmake-manual.html](https://doc.qt.io/qt-5/qmake-manual.html)
+<mark style="color:blue;">>> 基于Qt5.15版本翻译，原文链接：</mark>[<mark style="color:blue;">https://doc.qt.io/qt-5/qmake-manual.html</mark>](https://doc.qt.io/qt-5/qmake-manual.html)
+
+<mark style="color:blue;">>> 本文档基于Gitbook编写，本文档链接：</mark>[<mark style="color:blue;">https://tyw66.gitbook.io/qmake\_manual\_cn/</mark>](https://tyw66.gitbook.io/qmake\_manual\_cn/)
 
 ## 第Ⅰ部分 · 用户手册
 
