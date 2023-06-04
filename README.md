@@ -7,6 +7,8 @@ coverY: -303
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
+<mark style="color:blue;">基于Qt5.15版本翻译，原文：</mark>[https://doc.qt.io/qt-5/qmake-manual.html](https://doc.qt.io/qt-5/qmake-manual.html)
+
 ## 第Ⅰ部分 · 用户手册
 
 QMake工具有助于简化跨不同平台的开发项目的构建过程。它可以自动生成Makefile，而创建每个Makefile只需要几行信息。您可以对任何软件项目使用qmake，无论它是否用Qt编写。
@@ -67,7 +69,7 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 
 <div align="center" data-full-width="false">
 
-<figure><img src=".gitbook/assets/分隔素材.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/分隔素材.png" alt="译者的分割线"><figcaption></figcaption></figure>
 
 </div>
 
@@ -76,12 +78,15 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 * 如果您是初次接触Qt或者QMake，建议通读第1-5章，对qmake有一个大致的了解。
 * 第5-10章描述了不同的主题，按需进行阅读，或者有一定使用经验后通读，进行查漏补缺。
 * 参考手册即第11-13章，是字典的性质，可以查询相关的变量与函数，随用随查。
+* 如在阅读过程中发现问题，欢迎来[github](https://github.com/tyw66/QMakeManual\_CN/issues)或者知乎告诉我。
 
 
 
 
 
-:writing\_hand:原创翻译+校对，如您觉得有所收获，可以请作者吃个鸡腿🍗，鼓励创作出更多内容
+
+
+:writing\_hand:原创翻译与校对，如您觉得有所收获，可以请作者吃个鸡腿🍗，鼓励创作出更多内容
 
 <div align="left">
 
