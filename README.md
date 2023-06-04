@@ -3,7 +3,7 @@ description: 基于Qt5.15版本翻译 | By @tyw66
 coverY: -303
 ---
 
-# QMake官方手册【翻译】
+# QMake官方文档【翻译】
 
 <mark style="color:red;">**版权申明：本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。（https://creativecommons.org/licenses/by-nc-sa/4.0/）**</mark>
 
@@ -78,7 +78,7 @@ qmake还可以为Microsoft Visual studio生成项目，而不需要开发人员�
 * 如果您是初次接触Qt或者QMake，建议通读第1-5章，对qmake有一个大致的了解。
 * 第5-10章描述了不同的主题，按需进行阅读，或者有一定使用经验后通读，进行查漏补缺。
 * 参考手册即第11-13章，是字典的性质，可以查询相关的变量与函数，随用随查。
-* 如在阅读过程中发现问题，欢迎来[github](https://github.com/tyw66/QMakeManual\_CN/issues)或者知乎告诉我。
+* 如在阅读过程中发现问题，欢迎来[github](https://github.com/tyw66/QMakeManual\_CN/issues)或者[知乎](https://zhuanlan.zhihu.com/p/634557870?)告诉我。
 
 
 
