@@ -1,76 +1,93 @@
 # 第7章 qmake语言
 
-许多qmake项目文件简单地使用name=value和name+=value定义的列表，描述了项目使用的源文件和头文件。qmake还提供了其他操作符、函数和作用域，可用于处理变量声明中提供的信息。这些高级特性允许从单个项目文件中为多个平台生成Makefile。
+许多qmake项目文件简单地使用`name=value`和`name+=value`定义的列表，描述了项目使用的源文件和头文件。qmake还提供了其他操作符、函数和作用域，可用于处理变量声明中提供的信息。这些高级特性允许从单个项目文件中为多个平台生成Makefile。
 
 ## 操作符 <a href="#_toc31159" id="_toc31159"></a>
 
-在许多项目文件中，可以使用赋值（=）和附加（+=）操作符来包含有关项目的所有信息。典型的使用模式是为一个变量分配一个值列表，并根据各种测试的结果附加更多的值。由于qmake使用默认值来定义某些变量，因此有时需要使用删除（-=）操作符来过滤掉不需要的值。下面的部分描述了如何使用操作符来操作变量的内容。
+在许多项目文件中，可以使用赋值（`=`）和附加（`+=`）操作符来包含有关项目的所有信息。典型的使用模式是为一个变量分配一个值列表，并根据各种测试的结果附加更多的值。由于qmake使用默认值来定义某些变量，因此有时需要使用删除（`-=`）操作符来过滤掉不需要的值。下面的部分描述了如何使用操作符来操作变量的内容。
 
 ### 分配值 <a href="#_toc26656" id="_toc26656"></a>
 
-\=操作符为一个变量分配一个值：
+`=`操作符为一个变量分配一个值：
 
-上面的一行将TARGET变量设置为myapp。这将用myapp覆盖之前为目标设置的任何值。
+```
+TARGET=myapp
+```
+
+上面的一行将`TARGET`变量设置为`myapp`。这将用`myapp`覆盖之前为目标设置的任何值。
 
 ### 添加值 <a href="#_toc28291" id="_toc28291"></a>
 
-\+=操作符将一个新值附加到变量中的值列表中：
+`+=`操作符将一个新值附加到变量中的值列表中：
 
-上面的一行将USE\_MY\_STUFF附加到要放在生成的Makefile中的预处理器定义的列表中。
+```
+DEFINES+=USE_MY_STUFF
+```
+
+上面的一行将`USE_MY_STUFF`附加到要放在生成的Makefile中的预处理器定义的列表中。
 
 ### 删除值 <a href="#_toc22777" id="_toc22777"></a>
 
-\-=操作符将从变量中的值列表中删除一个值：
+`-=`操作符将从变量中的值列表中删除一个值：
 
-上面这一行将USE\_MY\_STUFF从生成的Makefile中的预处理器定义列表中删除。
+```
+DEFINES-=USE_MY_STUFF
+```
+
+上面这一行将`USE_MY_STUFF`从生成的Makefile中的预处理器定义列表中删除。
 
 ### 添加唯一值 <a href="#_toc31287" id="_toc31287"></a>
 
-\*=运算符将值添加到变量中的值列表中，但仅在它不存在的情况下。这可以防止在变量中多次包含值。例如：
+`*=`运算符将值添加到变量中的值列表中，但仅在它不存在的情况下。这可以防止在变量中多次包含值。例如：
 
-在上一行中，如果USE\_MY\_STUFF尚未定义，则只会被添加到预处理器定义列表中。请注意，unique()函数也可以用于确保一个变量只包含每个值的一个实例。
+```
+DEFINES*=USE_MY_STUFF
+```
+
+在上一行中，如果`USE_MY_STUFF`尚未定义，则只会被添加到预处理器定义列表中。请注意，`unique()`函数也可以用于确保一个变量只包含每个值的一个实例。
 
 ### 替换值 <a href="#_toc31131" id="_toc31131"></a>
 
 \~=操作符将用指定的值替换与正则表达式匹配的任何值：
 
-DEFINES \~= s/QT\_\[DT].+/QT
+```
+DEFINES ~= s/QT_[DT].+/QT
+```
 
-在上一行中，列表中以QT\_D或QT\_T开头的任何值都将被替换为QT。
+在上一行中，列表中以`QT_D`或`QT_T`开头的任何值都将被替换为`QT`。
 
 ### 变量扩展 <a href="#_toc22980" id="_toc22980"></a>
 
-\$$操作符用于提取变量的内容，并可用于在变量之间传递值或将它们提供给函数：
+`$$`操作符用于提取变量的内容，并可用于在变量之间传递值或将它们提供给函数：
 
-EVERYTHING = \$$SOURCES \$$HEADERS
-
+```
+EVERYTHING = $$SOURCES $$HEADERS
 message("The project contains the following files:")
-
-message(\$$EVERYTHING)
+message($$EVERYTHING)
+```
 
 变量可用于存储环境变量的内容。这些数据可以在运行qmake时进行提取，也可以在构建项目时包含在生成的Makefile中以进行提取。
 
-要在运行qmake时获取环境值的内容，请使用\$$(...)运算符：
+要在运行qmake时获取环境变量的内容，请使用`$$(...)`运算符：
 
-DESTDIR = \$$(PWD)
+```
+DESTDIR = $$(PWD)
+message(The project will be installed in $$DESTDIR)
+```
 
-message(The project will be installed in \$$DESTDIR)
+在上述赋值中，在处理项目文件时，将读取`PWD`环境变量的值。
 
-在上述赋值中，在处理项目文件时，将读取PWD环境变量的值。
+要获取在处理生成的Makefile时的环境变量的值，请使用`$(...)`运算符：
 
-要获取在处理生成的Makefile时的环境值的内容，请使用$(...)运算符：
-
-DESTDIR = \$$(PWD)
-
-message(The project will be installed in \$$DESTDIR)
-
+```
+DESTDIR = $$(PWD)
+message(The project will be installed in $$DESTDIR)
 DESTDIR = $(PWD)
-
 message(The project will be installed in the value of PWD)
-
 message(when the Makefile is processed.)
+```
 
-在上述赋值中，在处理项目文件时立即读取PWD的值，但$(PWD)被分配给生成的Makefile中的DESTDIR。这使得，只要环境变量被正确设置，构建过程就更加灵活。
+在上述赋值中，在处理项目文件时立即读取`PWD`的值，但`$(PWD)`被分配给生成的Makefile中的`DESTDIR`。这使得只要正确设置环境变量，构建过程就能更加灵活。
 
 ### 访问qmake属性 <a href="#_toc18233" id="_toc18233"></a>
 
